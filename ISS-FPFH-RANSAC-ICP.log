@@ -1,0 +1,65 @@
+Initializing PointCloud for pc2Error.pcd
+reading pc2Error.pcd
+Size of Point Cloud : 217088
+calculating ISS keypoints for pc2Error.pcd
+[pcl::ISSKeypoint3D::detectKeypoints] : The third eigenvalue is negative! Skipping the point with index 53895.
+[pcl::ISSKeypoint3D::detectKeypoints] : The third eigenvalue is negative! Skipping the point with index 54079.
+[pcl::ISSKeypoint3D::detectKeypoints] : The third eigenvalue is negative! Skipping the point with index 54080.
+[pcl::ISSKeypoint3D::detectKeypoints] : The third eigenvalue is negative! Skipping the point with index 54081.
+[pcl::ISSKeypoint3D::detectKeypoints] : The third eigenvalue is negative! Skipping the point with index 54251.
+[pcl::ISSKeypoint3D::detectKeypoints] : The third eigenvalue is negative! Skipping the point with index 54315.
+[pcl::ISSKeypoint3D::detectKeypoints] : The third eigenvalue is negative! Skipping the point with index 54324.
+[pcl::ISSKeypoint3D::detectKeypoints] : The third eigenvalue is negative! Skipping the point with index 54675.
+[pcl::ISSKeypoint3D::detectKeypoints] : The third eigenvalue is negative! Skipping the point with index 109185.
+[pcl::ISSKeypoint3D::detectKeypoints] : The third eigenvalue is negative! Skipping the point with index 162793.
+[pcl::ISSKeypoint3D::detectKeypoints] : The third eigenvalue is negative! Skipping the point with index 162795.
+[pcl::ISSKeypoint3D::detectKeypoints] : The third eigenvalue is negative! Skipping the point with index 162796.
+[pcl::ISSKeypoint3D::detectKeypoints] : The third eigenvalue is negative! Skipping the point with index 162975.
+[pcl::ISSKeypoint3D::detectKeypoints] : The third eigenvalue is negative! Skipping the point with index 162978.
+[pcl::ISSKeypoint3D::detectKeypoints] : The third eigenvalue is negative! Skipping the point with index 162979.
+[pcl::ISSKeypoint3D::detectKeypoints] : The third eigenvalue is negative! Skipping the point with index 162983.
+[pcl::ISSKeypoint3D::detectKeypoints] : The third eigenvalue is negative! Skipping the point with index 162984.
+[pcl::ISSKeypoint3D::detectKeypoints] : The third eigenvalue is negative! Skipping the point with index 163217.
+[pcl::ISSKeypoint3D::detectKeypoints] : The third eigenvalue is negative! Skipping the point with index 163219.
+[pcl::ISSKeypoint3D::detectKeypoints] : The third eigenvalue is negative! Skipping the point with index 163220.
+[pcl::ISSKeypoint3D::detectKeypoints] : The third eigenvalue is negative! Skipping the point with index 163226.
+number of keypoints in cloud: 3818
+estimating cloud normals from keypoints for pc2Error.pcd
+Cloud Normal size : 3818
+
+Initializing PointCloud for pc1Error.pcd
+reading pc1Error.pcd
+Size of Point Cloud : 217088
+calculating ISS keypoints for pc1Error.pcd
+[pcl::ISSKeypoint3D::detectKeypoints] : The third eigenvalue is negative! Skipping the point with index 45154.
+number of keypoints in cloud: 4867
+estimating cloud normals from keypoints for pc1Error.pcd
+Cloud Normal size : 4867
+
+Computing FPFH desc forpc2Error.pcd
+Size of fpfh desc src : 3818
+Computing FPFH desc forpc1Error.pcd
+Size of fpfh desc dst : 4867
+
+RANSAC for initial alignment
+
+Fitness score: 0.021238
+
+    |  0.933  0.002 -0.361 |
+R = |  0.090  0.968  0.236 |
+    |  0.349 -0.253  0.902 |
+
+t = < -0.305, 0.005, -0.097 >
+Saving RANSAC point cloud
+
+ICP for fine-tuning
+ICP has converged: 1 score: 0.0323929
+   0.999959  0.00501781  0.00759009    -0.03411
+-0.00502754    0.999986   0.0012483  -0.0412141
+-0.00758408 -0.00128628    0.999971  -0.0356976
+          0           0           0           1
+Saving final point cloud after ICP
+
+C:\Users\Sharad\source\repos\PointCloudregistration\Debug\PointCloudregistration.exe (process 27468) exited with code 0.
+To automatically close the console when debugging stops, enable Tools->Options->Debugging->Automatically close the console when debugging stops.
+Press any key to close this window . . .

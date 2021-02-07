@@ -24,19 +24,24 @@ using namespace pcl;
 
 typedef PointCloud<FPFHSignature33>::Ptr FPFHPtr;
 typedef pcl::PointCloud<pcl::PointXYZ>::Ptr CloudPtr;
+
+//to be added later for setting all configs
 struct config
 {
 	int x;
 };
 
-class Point
+class Points
 {
-public:
-	Point(string filename);
-	void func();
+private:
 	int setPointCloud(string filename);
-	void setKeyPoints();
+	void setKeyPointsSIFT();
 	void setNormals();
+	void setKeyPointsISS();
+	double computeCloudResolution(const pcl::PointCloud<pcl::PointXYZ>::ConstPtr& cloud);
+
+public:
+	Points(string filename,string feType);
 
 	pcl::PointCloud<pcl::PointXYZ>::Ptr cloud;
 	pcl::PointCloud<pcl::PointXYZ>::Ptr cloudKeyPoints;
@@ -46,18 +51,20 @@ public:
 
 class CloudRegistration
 {
-public:
-	void FPFH(Point& src, Point& dst,
+private:
+	void FPFH(Points& src, Points& dst,
 		FPFHPtr& fpfhs_src,
 		FPFHPtr& fpfhs_tgt);
-	void RANSAC(Point& src, Point& tgt,
+	void RANSAC(Points& src, Points& tgt,
 		FPFHPtr& fpfhs_src,
 		FPFHPtr& fpfhs_tgt,
 		CloudPtr& RANSACKpCloud,
 		CloudPtr& RANSACCloud);
 	void ICP(CloudPtr& src, CloudPtr& tgt, CloudPtr& RANSACCloud);
-	void PipeLine1(Point& src, Point& tgt);
-	void Register(Point& src, Point& tgt, string pipeLine);
+	void PipeLine1(Points& src, Points& tgt);
+
+public:
+	void Register(Points& src, Points& tgt, string pipeLine);
 
 
 };

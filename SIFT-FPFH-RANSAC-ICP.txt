@@ -1,0 +1,43 @@
+Initializing PointCloud for pc1Error.pcd
+Reading pc1Error.pcd
+Size of Point Cloud : 217088
+Calculating SIFT keypoints for pc1Error.pcd
+Number of keypoints in cloud: 3878
+Estimating cloud normals from keypoints for pc1Error.pcd
+Cloud Normal size : 3878
+
+Initializing PointCloud for pc2Error.pcd
+Reading pc2Error.pcd
+Size of Point Cloud : 217088
+Calculating SIFT keypoints for pc2Error.pcd
+Number of keypoints in cloud: 3689
+Estimating cloud normals from keypoints for pc2Error.pcd
+Cloud Normal size : 3689
+
+Computing FPFH desc for pc2Error.pcd
+Size of fpfh desc src : 3689
+Computing FPFH desc for pc1Error.pcd
+Size of fpfh desc dst : 3878
+
+RANSAC for initial alignment
+
+Fitness score: 0.126320
+
+    |  0.974  0.001 -0.226 |
+R = |  0.055  0.969  0.241 |
+    |  0.220 -0.247  0.944 |
+
+t = < -0.711, -0.099, -0.512 >
+Saving RANSAC point cloud
+
+ICP for fine-tuning
+ICP has converged: 1 score: 0.0698071
+   0.99475 -0.0254042 -0.0991515   0.112108
+ 0.0264325    0.99961 0.00907179  0.0857161
+ 0.0988823 -0.0116448   0.995032    0.33455
+         0          0          0          1
+Saving final point cloud after ICP
+
+C:\Users\Sharad\source\repos\PointCloudregistration\Debug\PointCloudregistration.exe (process 9512) exited with code 0.
+To automatically close the console when debugging stops, enable Tools->Options->Debugging->Automatically close the console when debugging stops.
+Press any key to close this window . . .
